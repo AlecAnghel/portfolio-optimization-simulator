@@ -1,6 +1,9 @@
--- schema.sql
+-- sql/schema.sql
+
+DROP TABLE IF EXISTS returns;
+
 CREATE TABLE returns (
-  date        DATE       PRIMARY KEY,
-  ticker      TEXT       NOT NULL,
-  daily_return REAL      NOT NULL
+    date TEXT NOT NULL,
+    ticker TEXT NOT NULL,
+    daily_return REAL NOT NULL
 );
